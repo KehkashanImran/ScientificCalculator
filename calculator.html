@@ -1,0 +1,75 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="calculator card">
+
+  <input type="text" class="calculator-screen z-depth-1" value="" id="result" placeholder="kehkashan"/>
+
+  <div class="calculator-keys">
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.sinh')">Sinh</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.sin')">Sin</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.cos')">Cos</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.tan')">Tan</button>
+
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.tanh')">Tanh</button>
+    
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.cosh')">Cosh</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.tan')">Tan</button>
+    
+    <button type="button" class="operator btn btn-info" onClick="getNumb('&#40')">(</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('&#41')">)</button>
+
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.log')">log</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.log(2)')">log2</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.log(10)')">log10</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.sqrt')">√</button>
+   
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.cbrt')">3√</button>
+   
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.E')">E</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.PI')">π</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('Math.exp')">^</button>
+
+
+    <button type="button" class="operator btn btn-info" onClick="getNumb('+')">+</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('-')">-</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('*')">&times;</button>
+    <button type="button" class="operator btn btn-info" onClick="getNumb('/')">&divide;</button>
+
+    <button type="button" onClick="getNumb('9')" class="btn btn-info">9</button>
+    <button type="button" onClick="getNumb('8')" class="btn btn-info">8</button>
+    <button type="button" onClick="getNumb('7')" class="btn btn-info">7</button>
+    <button type="button" onClick="getNumb('6')" class="btn btn-info">6</button>
+    <button type="button" onClick="getNumb('5')" class="btn btn-info">5</button>
+    <button type="button" onClick="getNumb('4')" class="btn btn-info">4</button>
+
+
+    <button type="button" onClick="getNumb('3')" class="btn btn-info">3</button>
+    <button type="button"  onClick="getNumb('2')" class="btn btn-info">2</button>
+    <button type="button"  onClick="getNumb('1')" class="btn btn-info">1</button>
+
+
+    <button type="button"  onClick="getNumb('0')" class="btn btn-info">0</button>
+    <button type="button" class="decimal function btn btn-info" onClick="getNumb('.')">.</button>
+    <button type="button" class="all-clear function btn btn-danger btn-sm" onClick="clearAll()">AC</button>
+    <button type="button" class="all-clear function btn btn-danger btn-sm" onClick="removeNum()">X</button>
+
+    <button type="button" class="equal-sign operator btn btn-warning" onClick="getResult()">=</button>
+
+  </div>
+</div>
+
+    </table>
+    <script src="./cal.js"></script>
+</body>
+</html>
